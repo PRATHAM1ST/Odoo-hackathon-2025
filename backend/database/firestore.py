@@ -1,9 +1,16 @@
 from firebase_config.firebase_admin_init import db
 from models.user import UserProfile
+import uuid
 
 def get_user_by_id(user_id: str):
     doc = db.collection("users").document(user_id).get()
     return doc.to_dict() if doc.exists else None
+
+def create_user(user_data: dict):
+    user_id = str(uuid.uuid4())
+    user_data['id'] = user_id
+    db.collection("users").document(user_id).set(user_data)
+    return user_id
 
 def update_user(user_id: str, user_data: dict):
     db.collection("users").document(user_id).set(user_data, merge=True)
