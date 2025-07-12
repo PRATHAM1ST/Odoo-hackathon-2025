@@ -1,4 +1,4 @@
-# 🔁 Skill Swap Platform
+# 🔁 Skill Swap Platformm
 
 A full-stack web application built during a hackathon to connect people based on the skills they offer and the skills they want to learn. The goal is to promote collaborative learning and growth through peer-to-peer skill exchange.
 
