@@ -1,0 +1,16 @@
+# Python environment
+venv/
+_pycache_/
+*.pyc
+
+# Environment and secrets
+.env
+firebase_config/serviceAccountKey.json
+
+# IDE settings
+*.idea/
+*.vscode/
+.DS_Store
+
+# OS files
+Thumbs.db
