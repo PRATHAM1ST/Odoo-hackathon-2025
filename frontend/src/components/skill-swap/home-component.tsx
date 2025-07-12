@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { User, UserProfile } from '@/types'
-import { userApi, searchApi } from '@/api'
+import { userApi, searchApi } from '@/lib/api'
 import UserProfileCard from '@/components/skill-swap/user-profile-card'
 import SwapRequestModal from '@/components/skill-swap/swap-request-modal'
 import { UserProfileView } from '@/components/skill-swap/user-profile-detail'
