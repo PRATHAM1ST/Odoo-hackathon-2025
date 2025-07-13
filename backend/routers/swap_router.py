@@ -5,6 +5,8 @@ from database.skills_db import add_skill_if_new
 from firebase_config.firebase_admin_init import db
 from auth.verify_token import verify_token
 from fastapi import Depends
+from datetime import datetime
+
 
 router = APIRouter(prefix="/swaps", tags=["Swaps"])
 

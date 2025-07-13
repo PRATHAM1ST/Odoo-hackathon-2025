@@ -13,7 +13,7 @@ class LoginRequest(BaseModel):
 
 @router.post("/login")
 def login(login_request: LoginRequest):
-    url = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAUFSzVnvqvA5rrvmYGvxpayJaQ3KlanpI"
+    url = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key="
     payload = {
         "email": login_request.email,
         "password": login_request.password,
@@ -29,7 +29,7 @@ class ResetPasswordRequest(BaseModel):
 
 @router.post("/reset-password")
 def reset_password(req: ResetPasswordRequest):
-    url = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAUFSzVnvqvA5rrvmYGvxpayJaQ3KlanpI"
+    url = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key="
     payload = {
         "requestType": "PASSWORD_RESET",
         "email": req.emai
